@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Plugin">
+      <UniqueIdentifier>{a9b0475a-28a3-49f1-838d-0dcdd4dde78f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\Header">
+      <UniqueIdentifier>{e669ad06-5348-4c82-9365-a2b7d736a015}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Plugin\Source">
+      <UniqueIdentifier>{41bba98c-16db-452d-8316-7f44f5a38a27}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Plugin\Ressources">
+      <UniqueIdentifier>{df2ff566-c0b1-450b-9b9e-1302c4893ade}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Plugin\Source\Controls">
+      <UniqueIdentifier>{74b8f7b9-d927-4b3f-947f-44540f4d3504}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Plugin\Header\Controls">
+      <UniqueIdentifier>{732f0fd6-ae2e-47cf-920a-d837b37a4a0e}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="VST">
+      <UniqueIdentifier>{992c9ec6-3b8c-426d-8d58-2752b33de639}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VST\VSTSDK">
+      <UniqueIdentifier>{1607e6d0-3c81-4a74-ae61-4673a0221bd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VST\VSTGUI">
+      <UniqueIdentifier>{cdde329c-e126-4ab8-a12b-356c27586879}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\Source\FX">
+      <UniqueIdentifier>{f9e8b030-905a-4dbe-89fd-77079692b5eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\Header\FX">
+      <UniqueIdentifier>{619e6c63-21f7-4e93-af68-aaab95b86616}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Editor.cpp">
+      <Filter>Plugin\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\CAbstractVertical.cpp">
+      <Filter>Plugin\Source\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\CCircDisplay.cpp">
+      <Filter>Plugin\Source\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\CDrawbar.cpp">
+      <Filter>Plugin\Source\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vstsdk\public.sdk\source\vst2.x\audioeffect.cpp">
+      <Filter>VST\VSTSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vstsdk\public.sdk\source\vst2.x\audioeffectx.cpp">
+      <Filter>VST\VSTSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vstsdk\vstgui.sf\vstgui\aeffguieditor.cpp">
+      <Filter>VST\VSTGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vstsdk\vstgui.sf\vstgui\vstcontrols.cpp">
+      <Filter>VST\VSTGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vstsdk\vstgui.sf\vstgui\vstgui.cpp">
+      <Filter>VST\VSTGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vstsdk\public.sdk\source\vst2.x\vstplugmain.cpp">
+      <Filter>VST\VSTGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="effectMain.cpp">
+      <Filter>Plugin\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="effectMainAudioProcessing.cpp">
+      <Filter>Plugin\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="effectMainEventHandling.cpp">
+      <Filter>Plugin\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="effectMainProgram.cpp">
+      <Filter>Plugin\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="effectMainParameter.cpp">
+      <Filter>Plugin\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="parameterConversions.cpp">
+      <Filter>Plugin\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\customControl.cpp">
+      <Filter>Plugin\Source\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="effectMainWavetables.cpp">
+      <Filter>Plugin\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="effectMainFactorySounds.cpp">
+      <Filter>Plugin\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\CDeviceDisplay.cpp">
+      <Filter>Plugin\Source\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\CTabButton.cpp">
+      <Filter>Plugin\Source\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="voiceController.cpp">
+      <Filter>Plugin\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="noteController.cpp">
+      <Filter>Plugin\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FX\fxDelay.cpp">
+      <Filter>Plugin\Source\FX</Filter>
+    </ClCompile>
+    <ClCompile Include="FX\fxLFO.cpp">
+      <Filter>Plugin\Source\FX</Filter>
+    </ClCompile>
+    <ClCompile Include="FX\fxGenericFilter.cpp">
+      <Filter>Plugin\Source\FX</Filter>
+    </ClCompile>
+    <ClCompile Include="FX\fxGenericLowpass.cpp">
+      <Filter>Plugin\Source\FX</Filter>
+    </ClCompile>
+    <ClCompile Include="FX\fxAllpass.cpp">
+      <Filter>Plugin\Source\FX</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Editor.h">
+      <Filter>Plugin\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Globals.h">
+      <Filter>Plugin\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\CAbstractVertical.h">
+      <Filter>Plugin\Header\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\CCircDisplay.h">
+      <Filter>Plugin\Header\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\CDrawbar.h">
+      <Filter>Plugin\Header\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Plugin\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="effectMain.h">
+      <Filter>Plugin\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="parameterConversions.h">
+      <Filter>Plugin\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\customControl.h">
+      <Filter>Plugin\Header\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="vstProgram.h">
+      <Filter>Plugin\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\CDeviceDisplay.h">
+      <Filter>Plugin\Header\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\CTabButton.h">
+      <Filter>Plugin\Header\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="voiceController.h">
+      <Filter>Plugin\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="noteController.h">
+      <Filter>Plugin\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FX\fxDelay.h">
+      <Filter>Plugin\Header\FX</Filter>
+    </ClInclude>
+    <ClInclude Include="FX\fxLFO.h">
+      <Filter>Plugin\Header\FX</Filter>
+    </ClInclude>
+    <ClInclude Include="FX\fxGlobals.h">
+      <Filter>Plugin\Header\FX</Filter>
+    </ClInclude>
+    <ClInclude Include="FX\fxGenericFilter.h">
+      <Filter>Plugin\Header\FX</Filter>
+    </ClInclude>
+    <ClInclude Include="FX\fxGenericLowpass.h">
+      <Filter>Plugin\Header\FX</Filter>
+    </ClInclude>
+    <ClInclude Include="FX\fxAllpass.h">
+      <Filter>Plugin\Header\FX</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="azr3.def">
+      <Filter>Plugin\Source</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="res_azr3.rc">
+      <Filter>Plugin\Source</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="cknob.bmp">
+      <Filter>Plugin\Ressources</Filter>
+    </Image>
+    <Image Include="dbblack.bmp">
+      <Filter>Plugin\Ressources</Filter>
+    </Image>
+    <Image Include="dbbrown.bmp">
+      <Filter>Plugin\Ressources</Filter>
+    </Image>
+    <Image Include="dbwhite.bmp">
+      <Filter>Plugin\Ressources</Filter>
+    </Image>
+    <Image Include="inside.bmp">
+      <Filter>Plugin\Ressources</Filter>
+    </Image>
+    <Image Include="make a change.bmp">
+      <Filter>Plugin\Ressources</Filter>
+    </Image>
+    <Image Include="miniledred.bmp">
+      <Filter>Plugin\Ressources</Filter>
+    </Image>
+    <Image Include="minioffon.bmp">
+      <Filter>Plugin\Ressources</Filter>
+    </Image>
+    <Image Include="num_yellow.bmp">
+      <Filter>Plugin\Ressources</Filter>
+    </Image>
+    <Image Include="onoffgreen.bmp">
+      <Filter>Plugin\Ressources</Filter>
+    </Image>
+    <Image Include="panelfx.bmp">
+      <Filter>Plugin\Ressources</Filter>
+    </Image>
+    <Image Include="panelvoice.bmp">
+      <Filter>Plugin\Ressources</Filter>
+    </Image>
+    <Image Include="vonoff.bmp">
+      <Filter>Plugin\Ressources</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

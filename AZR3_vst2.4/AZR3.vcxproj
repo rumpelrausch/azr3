@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{99B8CCFB-1485-43A8-9D2B-DB120773FA15}</ProjectGuid>
+    <RootNamespace>azr3</RootNamespace>
+    <ProjectName>AZR3_vst2.4</ProjectName>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <PreferredToolArchitecture>
+    </PreferredToolArchitecture>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <UseOfMfc>Static</UseOfMfc>
+    <PreferredToolArchitecture>
+    </PreferredToolArchitecture>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.29124.152</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(ProjectDir)build\$(Configuration)\$(PlatformTarget)\</IntDir>
+    <TargetName>AZR3</TargetName>
+    <OutDir>$(ProjectDir)\$(Configuration)\$(PlatformTarget)\</OutDir>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);..\..\vstsdk;..\..\vstsdk\public.sdk\source\vst2.x;..\..\vstsdk\vstgui.sf\vstgui</IncludePath>
+    <CopyLocalDeploymentContent>true</CopyLocalDeploymentContent>
+    <GenerateManifest>false</GenerateManifest>
+    <EmbedManifest>false</EmbedManifest>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(ProjectDir)build\$(Configuration)\$(PlatformTarget)\</IntDir>
+    <TargetName>AZR3</TargetName>
+    <OutDir>$(ProjectDir)\$(Configuration)\$(PlatformTarget)\</OutDir>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);..\..\vstsdk;..\..\vstsdk\public.sdk\source\vst2.x;..\..\vstsdk\vstgui.sf\vstgui</IncludePath>
+    <CopyLocalDeploymentContent>true</CopyLocalDeploymentContent>
+    <GenerateManifest>false</GenerateManifest>
+    <EmbedManifest>false</EmbedManifest>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)\$(Configuration)\$(PlatformTarget)\</OutDir>
+    <IntDir>$(ProjectDir)build\$(Configuration)\$(PlatformTarget)\</IntDir>
+    <EnableManagedIncrementalBuild>false</EnableManagedIncrementalBuild>
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>AZR3</TargetName>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);..\..\vstsdk;..\..\vstsdk\public.sdk\source\vst2.x;..\..\vstsdk\vstgui.sf\vstgui</IncludePath>
+    <CopyLocalDeploymentContent>true</CopyLocalDeploymentContent>
+    <GenerateManifest>false</GenerateManifest>
+    <EmbedManifest>false</EmbedManifest>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <EnableManagedIncrementalBuild>false</EnableManagedIncrementalBuild>
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)\$(Configuration)\$(PlatformTarget)\</OutDir>
+    <IntDir>$(ProjectDir)build\$(Configuration)\$(PlatformTarget)\</IntDir>
+    <TargetName>AZR3</TargetName>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);..\..\vstsdk;..\..\vstsdk\public.sdk\source\vst2.x;..\..\vstsdk\vstgui.sf\vstgui</IncludePath>
+    <CopyLocalDeploymentContent>true</CopyLocalDeploymentContent>
+    <GenerateManifest>false</GenerateManifest>
+    <EmbedManifest>false</EmbedManifest>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/azr3.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <PreprocessorDefinitions>WIN32;_DEBUG;NDEBUG;_WINDOWS;WINDOWS=1;DEVELOP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeaderOutputFile>$(ProjectDir)build\$(Configuration)\$(PlatformTarget)\azr3.pch</PrecompiledHeaderOutputFile>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level1</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <CallingConvention>Cdecl</CallingConvention>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <UseStandardPreprocessor>false</UseStandardPreprocessor>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <CreateHotpatchableImage>false</CreateHotpatchableImage>
+      <AdditionalIncludeDirectories>..\..\vstsdk;..\..\vstsdk\public.sdk\source\vst2.x;..\..\vstsdk\vstgui.sf\vstgui</AdditionalIncludeDirectories>
+      <BrowseInformationFile>$(ProjectDir)build\$(Configuration)\$(PlatformTarget)\</BrowseInformationFile>
+      <CompileAsManaged>false</CompileAsManaged>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>false</SDLCheck>
+      <GuardEHContMetadata>false</GuardEHContMetadata>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ProgramDataBaseFileName>$(ProjectDir)build\$(Configuration)\$(PlatformTarget)\</ProgramDataBaseFileName>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0407</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>shell32.lib;msvcrtd.lib;ole32.lib;gdi32.lib;User32.lib;advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(ProjectDir)\$(Configuration)\$(PlatformTarget)\$(TargetFileName)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib;libcmtd.lib;msvcrt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>.\$(AssemblyName).def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(ProjectDir)build\$(Configuration)\$(PlatformTarget)\$(AssemblyName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>false</GenerateMapFile>
+      <MapFileName>
+      </MapFileName>
+      <ImportLibrary>
+      </ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <TurnOffAssemblyGeneration>true</TurnOffAssemblyGeneration>
+      <AllowIsolation>true</AllowIsolation>
+      <OptimizeReferences>false</OptimizeReferences>
+      <CreateHotPatchableImage>
+      </CreateHotPatchableImage>
+      <LargeAddressAware>
+      </LargeAddressAware>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <TerminalServerAware>false</TerminalServerAware>
+      <EnableUAC>false</EnableUAC>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <LinkErrorReporting>NoErrorReport</LinkErrorReporting>
+    </Link>
+    <PostBuildEvent>
+      <Command>move $(ProjectDir)$(Configuration)\$(PlatformTarget)\$(TargetFileName) $(ProjectDir)dist\$(TargetName)_$(PlatformTarget)_$(Configuration)$(TargetExt)</Command>
+    </PostBuildEvent>
+    <Bscmake>
+      <OutputFile>$(ProjectDir)build\$(Configuration)\$(PlatformTarget)\$(TargetName).bsc</OutputFile>
+    </Bscmake>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TypeLibraryName>.\Debug/azr3.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <PreprocessorDefinitions>WIN32;_DEBUG;NDEBUG;_WINDOWS;WINDOWS=1;DEVELOP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeaderOutputFile>$(ProjectDir)build\$(Configuration)\$(PlatformTarget)\azr3.pch</PrecompiledHeaderOutputFile>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level1</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>false</OmitFramePointers>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <CreateHotpatchableImage>false</CreateHotpatchableImage>
+      <GuardEHContMetadata>false</GuardEHContMetadata>
+      <AdditionalIncludeDirectories>..\..\vstsdk;..\..\vstsdk\public.sdk\source\vst2.x;..\..\vstsdk\vstgui.sf\vstgui</AdditionalIncludeDirectories>
+      <BrowseInformationFile>$(ProjectDir)build\$(Configuration)\$(PlatformTarget)\</BrowseInformationFile>
+      <CompileAsManaged>false</CompileAsManaged>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>false</SDLCheck>
+      <UseStandardPreprocessor>false</UseStandardPreprocessor>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ProgramDataBaseFileName>$(ProjectDir)build\$(Configuration)\$(PlatformTarget)\</ProgramDataBaseFileName>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0407</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>shell32.lib;msvcrtd.lib;ole32.lib;gdi32.lib;User32.lib;advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(ProjectDir)\$(Configuration)\$(PlatformTarget)\$(TargetFileName)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib;libcmtd.lib;msvcrt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>.\$(AssemblyName).def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(ProjectDir)build\$(Configuration)\$(PlatformTarget)\$(AssemblyName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>false</GenerateMapFile>
+      <MapFileName>
+      </MapFileName>
+      <ImportLibrary>
+      </ImportLibrary>
+      <CreateHotPatchableImage>
+      </CreateHotPatchableImage>
+      <TurnOffAssemblyGeneration>true</TurnOffAssemblyGeneration>
+      <LargeAddressAware>
+      </LargeAddressAware>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <TerminalServerAware>false</TerminalServerAware>
+      <OptimizeReferences>false</OptimizeReferences>
+      <AllowIsolation>true</AllowIsolation>
+      <EnableUAC>false</EnableUAC>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <LinkErrorReporting>NoErrorReport</LinkErrorReporting>
+    </Link>
+    <PostBuildEvent>
+      <Command>move $(ProjectDir)$(Configuration)\$(PlatformTarget)\$(TargetFileName) $(ProjectDir)dist\$(TargetName)_$(PlatformTarget)_$(Configuration)$(TargetExt)</Command>
+    </PostBuildEvent>
+    <Bscmake>
+      <OutputFile>$(ProjectDir)build\$(Configuration)\$(PlatformTarget)\$(TargetName).bsc</OutputFile>
+    </Bscmake>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/azr3.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;WINDOWS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <PrecompiledHeaderOutputFile>$(ProjectDir)build\$(Configuration)\$(PlatformTarget)\azr3.pch</PrecompiledHeaderOutputFile>
+      <BrowseInformation>true</BrowseInformation>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <WarningLevel>Level1</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <AdditionalIncludeDirectories>..\..\vstsdk;..\..\vstsdk\public.sdk\source\vst2.x;..\..\vstsdk\vstgui.sf\vstgui</AdditionalIncludeDirectories>
+      <BrowseInformationFile>$(ProjectDir)build\$(Configuration)\$(PlatformTarget)\</BrowseInformationFile>
+      <CompileAsManaged>false</CompileAsManaged>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>false</SDLCheck>
+      <UseStandardPreprocessor>false</UseStandardPreprocessor>
+      <GuardEHContMetadata>false</GuardEHContMetadata>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ProgramDataBaseFileName>$(ProjectDir)build\$(Configuration)\$(PlatformTarget)\</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0407</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>libcmt.lib;uuid.lib;shell32.lib;ole32.lib;gdi32.lib;User32.lib;advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(ProjectDir)\$(Configuration)\$(PlatformTarget)\$(TargetFileName)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ModuleDefinitionFile>.\$(AssemblyName).def</ModuleDefinitionFile>
+      <SubSystem>Windows</SubSystem>
+      <LargeAddressAware>
+      </LargeAddressAware>
+      <TerminalServerAware>false</TerminalServerAware>
+      <ImportLibrary>
+      </ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <OptimizeReferences>false</OptimizeReferences>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <ProgramDatabaseFile>$(ProjectDir)build\$(Configuration)\$(PlatformTarget)\$(AssemblyName).pdb</ProgramDatabaseFile>
+      <TurnOffAssemblyGeneration>true</TurnOffAssemblyGeneration>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AllowIsolation>true</AllowIsolation>
+      <EnableUAC>false</EnableUAC>
+      <LinkErrorReporting>NoErrorReport</LinkErrorReporting>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib;libc.lib;msvcrtd.lib;libcd.lib;libcmtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <PostBuildEvent>
+      <Command>move $(ProjectDir)$(Configuration)\$(PlatformTarget)\$(TargetFileName) $(ProjectDir)dist\$(TargetName)_$(PlatformTarget)$(TargetExt)</Command>
+    </PostBuildEvent>
+    <Bscmake>
+      <OutputFile>$(ProjectDir)build\$(Configuration)\$(PlatformTarget)\$(TargetName).bsc</OutputFile>
+    </Bscmake>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TypeLibraryName>.\Release/azr3.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;WINDOWS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <PrecompiledHeaderOutputFile>$(ProjectDir)build\$(Configuration)\$(PlatformTarget)\azr3.pch</PrecompiledHeaderOutputFile>
+      <BrowseInformation>true</BrowseInformation>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>false</OmitFramePointers>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <AdditionalIncludeDirectories>..\..\vstsdk;..\..\vstsdk\public.sdk\source\vst2.x;..\..\vstsdk\vstgui.sf\vstgui</AdditionalIncludeDirectories>
+      <BrowseInformationFile>$(ProjectDir)build\$(Configuration)\$(PlatformTarget)\</BrowseInformationFile>
+      <CompileAsManaged>false</CompileAsManaged>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>false</SDLCheck>
+      <UseStandardPreprocessor>false</UseStandardPreprocessor>
+      <GuardEHContMetadata>false</GuardEHContMetadata>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ProgramDataBaseFileName>$(ProjectDir)build\$(Configuration)\$(PlatformTarget)\</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0407</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>libcmt.lib;uuid.lib;shell32.lib;ole32.lib;gdi32.lib;User32.lib;advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(ProjectDir)\$(Configuration)\$(PlatformTarget)\$(TargetFileName)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ModuleDefinitionFile>.\$(AssemblyName).def</ModuleDefinitionFile>
+      <SubSystem>Windows</SubSystem>
+      <LargeAddressAware>
+      </LargeAddressAware>
+      <TerminalServerAware>false</TerminalServerAware>
+      <ImportLibrary>
+      </ImportLibrary>
+      <ProgramDatabaseFile>$(ProjectDir)build\$(Configuration)\$(PlatformTarget)\$(AssemblyName).pdb</ProgramDatabaseFile>
+      <TurnOffAssemblyGeneration>true</TurnOffAssemblyGeneration>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <OptimizeReferences>false</OptimizeReferences>
+      <AllowIsolation>true</AllowIsolation>
+      <EnableUAC>false</EnableUAC>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <LinkErrorReporting>NoErrorReport</LinkErrorReporting>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib;libc.lib;msvcrtd.lib;libcd.lib;libcmtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <PostBuildEvent>
+      <Command>move $(ProjectDir)$(Configuration)\$(PlatformTarget)\$(TargetFileName) $(ProjectDir)dist\$(TargetName)_$(PlatformTarget)$(TargetExt)</Command>
+    </PostBuildEvent>
+    <Bscmake>
+      <OutputFile>$(ProjectDir)build\$(Configuration)\$(PlatformTarget)\$(TargetName).bsc</OutputFile>
+    </Bscmake>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\vstsdk\public.sdk\source\vst2.x\audioeffect.cpp" />
+    <ClCompile Include="..\..\vstsdk\public.sdk\source\vst2.x\audioeffectx.cpp" />
+    <ClCompile Include="..\..\vstsdk\public.sdk\source\vst2.x\vstplugmain.cpp" />
+    <ClCompile Include="..\..\vstsdk\vstgui.sf\vstgui\aeffguieditor.cpp" />
+    <ClCompile Include="..\..\vstsdk\vstgui.sf\vstgui\vstcontrols.cpp" />
+    <ClCompile Include="..\..\vstsdk\vstgui.sf\vstgui\vstgui.cpp" />
+    <ClCompile Include="Controls\CDeviceDisplay.cpp" />
+    <ClCompile Include="Controls\CTabButton.cpp" />
+    <ClCompile Include="Controls\customControl.cpp" />
+    <ClCompile Include="effectMainAudioProcessing.cpp" />
+    <ClCompile Include="Controls\CAbstractVertical.cpp" />
+    <ClCompile Include="Controls\CCircDisplay.cpp" />
+    <ClCompile Include="Controls\CDrawbar.cpp" />
+    <ClCompile Include="Editor.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MaxSpeed</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;NDEBUG;_WINDOWS;WINDOWS=1;DEVELOP</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WIN32;NDEBUG;_WINDOWS;WINDOWS=1;DEVELOP</PreprocessorDefinitions>
+      <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</BrowseInformation>
+      <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BrowseInformation>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MaxSpeed</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WIN32;NDEBUG;_WINDOWS;WINDOWS=1</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WIN32;NDEBUG;_WINDOWS;WINDOWS=1</PreprocessorDefinitions>
+      <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</BrowseInformation>
+      <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</BrowseInformation>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\vstsdk</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\vstsdk</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\vstsdk</AdditionalIncludeDirectories>
+      <AdditionalModuleDependencies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalModuleDependencies>
+      <AdditionalModuleDependencies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalModuleDependencies>
+      <AdditionalModuleDependencies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </AdditionalModuleDependencies>
+      <AdditionalModuleDependencies Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </AdditionalModuleDependencies>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\vstsdk</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="effectMain.cpp" />
+    <ClCompile Include="effectMainEventHandling.cpp" />
+    <ClCompile Include="effectMainFactorySounds.cpp" />
+    <ClCompile Include="effectMainParameter.cpp" />
+    <ClCompile Include="effectMainProgram.cpp" />
+    <ClCompile Include="effectMainWavetables.cpp" />
+    <ClCompile Include="FX\fxAllpass.cpp" />
+    <ClCompile Include="FX\fxDelay.cpp" />
+    <ClCompile Include="FX\fxGenericFilter.cpp" />
+    <ClCompile Include="FX\fxGenericLowpass.cpp" />
+    <ClCompile Include="FX\fxLFO.cpp" />
+    <ClCompile Include="parameterConversions.cpp" />
+    <ClCompile Include="voiceController.cpp" />
+    <ClCompile Include="noteController.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Controls\CAbstractVertical.h" />
+    <ClInclude Include="Controls\CCircDisplay.h" />
+    <ClInclude Include="Controls\CDeviceDisplay.h" />
+    <ClInclude Include="Controls\CDrawbar.h" />
+    <ClInclude Include="Controls\CTabButton.h" />
+    <ClInclude Include="Controls\customControl.h" />
+    <ClInclude Include="Editor.h" />
+    <ClInclude Include="effectMain.h" />
+    <ClInclude Include="FX\fxAllpass.h" />
+    <ClInclude Include="FX\fxDelay.h" />
+    <ClInclude Include="FX\fxGenericFilter.h" />
+    <ClInclude Include="FX\fxGenericLowpass.h" />
+    <ClInclude Include="FX\fxGlobals.h" />
+    <ClInclude Include="FX\fxLFO.h" />
+    <ClInclude Include="voiceController.h" />
+    <ClInclude Include="vstProgram.h" />
+    <ClInclude Include="Globals.h" />
+    <ClInclude Include="parameterConversions.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="noteController.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="azr3.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="res_azr3.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="cknob.bmp" />
+    <Image Include="dbblack.bmp" />
+    <Image Include="dbbrown.bmp" />
+    <Image Include="dbwhite.bmp" />
+    <Image Include="inside.bmp" />
+    <Image Include="make a change.bmp" />
+    <Image Include="miniledred.bmp" />
+    <Image Include="minioffon.bmp" />
+    <Image Include="num_yellow.bmp" />
+    <Image Include="onoffgreen.bmp" />
+    <Image Include="panelfx.bmp" />
+    <Image Include="panelvoice.bmp" />
+    <Image Include="vonoff.bmp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
