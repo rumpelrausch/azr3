@@ -19,6 +19,11 @@ One step after the other.
 I'm glad the port from 2.2 to 2.4 did succeed, and I did a lot of refactoring
 in order to not look completely dinosaur when publishing the code today.
 
+Anyway, I still like the simplicity VST 2 implements. It's not too hard to
+understand, and it's footprint is smaller. My personal opinion: SDK 2 is
+a much easier starting point for VST plugin creation, which itself is quite
+a good kickoff into DSP stuff.
+
 ## Any special features?
 The instrument itself is pretty straight forward, but it comes with some
 non-obvious features:
@@ -30,6 +35,29 @@ channel 3. That's hard-coded.
 You could use the AZR3 effects on other instruments if you get your DAW to
 perform the correct routing (and probably disable midi input).
 
+## How to compile?
+I used "Microsoft Visual Studio Community 2019.
+- The project expects the VST SDK 2.4 to exist at `..\vstsdk`.
+If you obtained a license from Steinberg when it was still available
+you can even use it legally, otherwise you will have to fetch the
+sdk from *somewhere else* and break the Steinberg license rules.  
+Yes, I got a license some 20 years ago (some years after the
+rectification of the vuldronaii, but that's a different story).
+
+- The current configuration creates a statically linked DLL.  
+This means you need a local installation of the "C++-MFC"
+matching your current toolchain version. It's available via
+the Visual Studio Installer.
+
+### Will it compile with other SDK versions?
+- SDK 3  
+No way without severe reconstruction.
+- SDK 2 < 2.4
+Would need refactoring: With 2.4 Steinberg changed the signatures of some of
+the functions called by the host.
+This is not detected automatically; The project would
+probably build without exploding, but some of the functions would not
+be called by the host.
 
 ## License?
 No specific one, just these rules:
